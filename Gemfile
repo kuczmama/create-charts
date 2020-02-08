@@ -6,6 +6,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 gem 'activerecord'
+gem 'gruff'
+gem 'rmagick'
 gem 'pg'
 gem 'pry'
 
