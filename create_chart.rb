@@ -53,7 +53,7 @@ slugs.each do |slug|
       label = 'down'
     end
 
-    title = "#{slug}:#{label} - #{dates[0].strftime(DATE_FORMAT)} - #{dates[-1].strftime(DATE_FORMAT)}"
+    title = "#{slug} - #{dates[0].strftime(DATE_FORMAT)} - #{dates[-1].strftime(DATE_FORMAT)}"
     g = LineGraph.new
     g.title = title
     g.labels = {}.tap { |labels| dates[0...-1].each_with_index { |date, idx| labels[idx * 2] = date.strftime(DATE_FORMAT) } }
